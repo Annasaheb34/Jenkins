@@ -21,14 +21,11 @@ public class Controller {
         return foodService.savePerson(food);
     }
 
+    
+    
+    
     @GetMapping
     public Iterable<Food> getAllFoods() {
         return foodService.getAllFoods();
     }
-    
-    @GetMapping
-    public String greetings() {
-    	return "Good Morning!!";
-    }
-
 }
