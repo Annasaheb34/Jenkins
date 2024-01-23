@@ -25,5 +25,10 @@ public class Controller {
     public Iterable<Food> getAllFoods() {
         return foodService.getAllFoods();
     }
+    
+    @GetMapping
+    public String greetings() {
+    	return "Good Morning!!";
+    }
 
 }
